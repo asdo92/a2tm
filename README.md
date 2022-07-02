@@ -13,7 +13,7 @@ a2tm is a python script to manage torrent/magnet/URL downloads more easily using
   * Open the terminal and type the following comands:
     
     ```shell
-    $ git clone https://github.com/q3aql/a2tm`
+    $ git clone https://github.com/q3aql/a2tm
     $ cd a2tm
     $ chmod +x install.sh
     $ sudo ./install.sh
