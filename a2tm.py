@@ -30,7 +30,7 @@ if sys.version_info<(3,0):
 #Function to clear screen
 def ClearScreen():
   if sys.platform == "cygwin":
-    print (300 * "\n")
+    os.system("clear")
   elif os.name == "posix":
     os.system("clear")
   elif os.name == "nt":
