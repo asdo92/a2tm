@@ -4,11 +4,11 @@
 # -----------------------------------------------------------------
 # a2tm - aria2 python script for manage url and torrent downloads |
 # https://aria2.github.io/                                        |
-# Created by q3aql (q3aql@duck.com)                               |
+# Created by asdo92 (asdo92@duck.com)                             |
 # Licensed by GPL v2.0                                            |
 # Last update: 30-03-2021                                         |
 # Builds:                                                         |
-#   * https://github.com/q3aql/aria2-static-builds/releases       |
+#   * https://github.com/asdo92/aria2-static-builds/releases      |
 #   * https://github.com/tatsuhiro-t/aria2/releases               |
 # Compatible with Python 3.x                                      |
 # -----------------------------------------------------------------
@@ -214,7 +214,7 @@ except:
   print ("# Error: 'aria2' is not installed!")
   print ("")
   print ("# Builds:")
-  print ("  * https://github.com/q3aql/aria2-static-builds/releases")
+  print ("  * https://github.com/asdo92/aria2-static-builds/releases")
   print ("  * https://github.com/tatsuhiro-t/aria2/releases")
   print ("")
   PauseExit=input("# Press ENTER to exit ")
