@@ -26,9 +26,7 @@ a2tm is a python script to manage torrent/magnet/URL downloads more easily using
 
   + Copied executable (/usr/bin/a2tm).
   + Configuring execution permissions (/usr/bin/a2tm).
-  + Created service (/etc/systemd/system/a2tm.service).
-  + INFO: Edit /etc/systemd/system/a2tm.service and change
-        the variable User=<USER>.
+  + Created service (/etc/systemd/user/a2tm.service).
   + Installation completed.
   ````
       
@@ -49,7 +47,7 @@ a2tm is a python script to manage torrent/magnet/URL downloads more easily using
 ## Run as service:
 
   * SysV Init: `/etc/init.d/a2tm {start|stop|restart|status}`
-  * SystemD: `systemctl {start|stop|status} a2tm`
+  * SystemD: `systemctl --user {start|stop|status} a2tm`
 
 ### External links:
 
