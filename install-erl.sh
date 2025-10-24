@@ -24,6 +24,7 @@ erlc -W0 a2tm.erl
 echo "+ Creating run script (~/.local/bin/a2tm_erl)."
 echo '#!/bin/bash' > ~/.local/bin/a2tm_erl
 echo "" >> ~/.local/bin/a2tm_erl
+echo 'mkdir -p ~/A2TM/files' >> ~/.local/bin/a2tm_erl
 echo 'cd ~/.local/bin/a2tm-erl' >> ~/.local/bin/a2tm_erl
 echo 'if [ ${1} == "run_service" ] ; then' >> ~/.local/bin/a2tm_erl
 echo '  erl -noshell -s a2tm run_service -s init stop' >> ~/.local/bin/a2tm_erl
