@@ -1,0 +1,11 @@
+[Unit]
+Description=Run a2tm (erlang version) service
+After=network.target
+
+[Install]
+WantedBy=default.target
+
+[Service]
+Type=simple
+ExecStart=~/.local/bin/a2tm_erl run_service
+ExecStop=/usr/bin/killall aria2c
