@@ -36,10 +36,8 @@ echo "+ Copied executable (/usr/bin/a2tm)."
 chmod +x /usr/bin/a2tm
 echo "+ Configuring execution permissions (/usr/bin/a2tm)."
 if [ -f /usr/bin/systemctl ] ; then
-  cp -rf service/a2tm.service /etc/systemd/system/
-  echo "+ Created service (/etc/systemd/system/a2tm.service)."
-  echo "+ INFO: Edit /etc/systemd/system/a2tm.service and change"
-  echo "        the variable User=<USER>."
+  cp -rf service/a2tm.service /etc/systemd/user/
+  echo "+ Created service (/etc/systemd/user/a2tm.service)."
   systemctl daemon-reload
 else
   if [ -d /etc/init.d ] ; then
