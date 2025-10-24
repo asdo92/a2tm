@@ -2,11 +2,10 @@
 Description=Run a2tm Service
 After=network.target
 
-[Install]
-WantedBy=multi-user.target
-
 [Service]
-User=<USER>
 Type=simple
 ExecStart=/usr/bin/a2tm start
 ExecStop=/usr/bin/killall aria2c
+
+[Install]
+WantedBy=default.target
